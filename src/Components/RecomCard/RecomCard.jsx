@@ -1,6 +1,7 @@
 import RecommendationData from '../../Data/RecommendationData';
 import { motion,useInView } from 'framer-motion';
 import { useRef } from "react";
+import { FaLinkedinIn, FaQuoteLeft, FaQuoteRight } from 'react-icons/fa6';
 
 export default function RecomCard() {
     const ref = useRef(null);
@@ -43,16 +44,16 @@ export default function RecomCard() {
                 }}      
             >
                 <div>
-                    <p><i className="fa-solid fa-quote-left mb-3 -text--primary"></i></p>
+                    <p><FaQuoteLeft className="mb-3 -text--primary" /></p>
                     <p className="-text--primary text-base font-normal">{item.comment}</p>
-                    <i className="fa-solid fa-quote-right block text-right mt-3 -text--primary"></i>
+                    <FaQuoteRight className="block text-right mt-3 -text--primary" />
                 </div>
                 <div className="flex justify-between items-end">
                     <div>
                         <p className="font-Manrope text-xl font-medium  -text--primary">{item.name}</p>
                         <div className='flex items-center'>
                             <p className="text-base mr-2 -text--primary">{item.title}</p>
-                            <a href={item.linkedin} target="new"><i className="fa-brands fa-linkedin -text--primary cursor-pointer hover:-text--lightgray"></i></a>
+                            <a href={item.linkedin} target="new"><FaLinkedinIn className="-text--primary cursor-pointer hover:-text--lightgray" /></a>
                         </div>
                     </div>
                     <img className="object-over object-center rounded-full border border-solid -border--lightgray w-10 h-10" src={item.img} alt={item.name} />

@@ -2,6 +2,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { FaMinus, FaPlus } from 'react-icons/fa6';
 
 export default function Codeblock({project}){
     const codeList = project.code;
@@ -71,7 +72,11 @@ export default function Codeblock({project}){
                 </div>
                 <div className="flex items-center">
                     <p className="body--gray mr-2">{"</>"}</p>
-                    <i className={ isActive ? "fa-solid fa-minus fa-lg -text--primary": "fa-solid fa-plus fa-lg -text--primary"}></i>
+                    {isActive ? (
+                        <FaMinus className="text-lg -text--primary" />
+                    ) : (
+                        <FaPlus className="text-lg -text--primary" />
+                    )}
                 </div>
             </motion.div>
         );

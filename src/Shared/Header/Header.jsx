@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { FaBars, FaXmark } from 'react-icons/fa6';
 
 export default function Header(){
     const cRoute = useLocation();
@@ -107,10 +108,11 @@ export default function Header(){
                             className="hamburger"  
                             onClick={handleToggle}
                         >
-                            <i className={ 
-                                headerIcon ? "fa-solid fa-xmark fa-lg -text--onDark" : "fa-solid fa-bars fa-lg -text--onDark"
-                            }>                           
-                            </i>
+                            {headerIcon ? (
+                                <FaXmark className="text-lg -text--onDark" />
+                            ) : (
+                                <FaBars className="text-lg -text--onDark" />
+                            )}
                         </button>
                     </div>
                     <ul className={isOpen ? 'block' : 'hidden'}>

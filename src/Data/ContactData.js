@@ -2,17 +2,17 @@ const ContactData = [
     {
         id:0,
         link:'http://www.linkedin.com/in/sora-noh',
-        icon:'fa-brands fa-linkedin'
+        icon:'linkedin'
     },
     {
         id:1,
         link:'mailto:nosora0422@gmail.com',
-        icon:'fa-solid fa-envelope'
+        icon:'email'
     },
     {
         id:2,
         link:'http://github.com/nosora0422',
-        icon:'fa-brands fa-github'
+        icon:'github'
     },
 
 ]

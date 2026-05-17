@@ -1,5 +1,6 @@
 import contactData from "../../Data/ContactData";
 import { motion } from 'framer-motion';
+import { FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa6';
 
 
 const fadeInAnimationVariants = {
@@ -17,6 +18,12 @@ const fadeInAnimationVariants = {
     }),
 }
 
+const contactIcons = {
+    linkedin: FaLinkedinIn,
+    email: FaEnvelope,
+    github: FaGithub,
+};
+
 
 export default function Contact(){
     return(
@@ -31,7 +38,10 @@ export default function Contact(){
                         <p className="body--gray">Feel free to reach out to me with any questions about me and my projects! I'm here and ready to collaborate with you on any interesting web development project!</p>
                         <ul className="hidden lg:mt-8 lg:w-full lg:flex lg:items-center" >
                             <li><a className="-text--chip--text -bg--chip--background y px-4 mr-8 rounded-full" href="mailto:nosora0422@gmail.com">nosora0422@gmail.com</a></li>
-                            {contactData.map(({ link, icon, id }) => (
+                            {contactData.map(({ link, icon, id }) => {
+                                const Icon = contactIcons[icon];
+
+                                return (
                                 <motion.li 
                                     key={id}
                                     variants={fadeInAnimationVariants}
@@ -43,10 +53,11 @@ export default function Contact(){
                                     custom={id}
                                 >
                                     <a href={link} target="new">
-                                        <i className={`${icon} fa-lg mr-8 -text--primary hover:-text--lightgray`}></i>
+                                        {Icon && <Icon className="text-lg mr-8 -text--primary hover:-text--lightgray" />}
                                     </a>
                                 </motion.li>
-                            ))}
+                                );
+                            })}
                             
                         </ul>
                     </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaArrowRight, FaMobileScreenButton } from 'react-icons/fa6';
 
 export default function ProjectBanner({ project }){
     const [hovered, setHovered] = useState(false);
@@ -21,7 +22,7 @@ export default function ProjectBanner({ project }){
                                     onMouseLeave={() => setHovered(false)}
                                 >
                                     
-                                    <i className="fa-solid fa-mobile-screen-button"></i>
+                                    <FaMobileScreenButton />
                                     
                                 </button>}
                             </div>
@@ -40,13 +41,13 @@ export default function ProjectBanner({ project }){
                                             className="button drop-shadow-lg mt-0 lg:mt-6" 
                                             href={project.demolink} 
                                             target="new"
-                                        >Live Demo<i className="fa-solid fa-arrow-right ml-2"></i>
+                                        >Live Demo<FaArrowRight className="ml-2 inline-block" />
                                         </a>}
                                        { project.gitHubLink && <a 
                                             className="button drop-shadow-lg mt-0 lg:mt-6" 
                                             href={project.gitHubLink} 
                                             target="new"
-                                        >Github<i className="fa-solid fa-arrow-right ml-2"></i>
+                                        >Github<FaArrowRight className="ml-2 inline-block" />
                                         </a>}
                                     </div>
                                 </div>

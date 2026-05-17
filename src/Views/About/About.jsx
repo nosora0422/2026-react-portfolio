@@ -6,6 +6,7 @@ import AboutBanner from '../../Assets/Spline/AboutBanner/AboutBanner';
 import AboutBannerDark from '../../Assets/Spline/AboutBanner/AboutBannerDark';
 import Button from '../../Components/Button/Button';
 import resume from '../../Assets/Documents/sora_noh_resume.pdf'
+import { FaArrowRight } from 'react-icons/fa6';
 
 
 export default function About(){
@@ -87,7 +88,7 @@ export default function About(){
                                     className="w-full max-w-[800px] md:h-[70vh] object-top object-cover rounded-2xl drop-shadow-lg" 
                                     alt="Sora Noh Profile" 
                                 />
-                                <a className="button -bg--yellow -text--grey hover:bg-yellow-500" href={resume} target='new'>Resume <i className="ml-3 fa-solid fa-arrow-right"></i></a>
+                                <a className="button -bg--yellow -text--grey hover:bg-yellow-500" href={resume} target='new'>Resume <FaArrowRight className="ml-3 inline-block" /></a>
                             </div>
                         </div>
                     </div>
