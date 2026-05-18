@@ -52,7 +52,7 @@ export default function Contact(){
                                     }}
                                     custom={id}
                                 >
-                                    <a href={link} target="new">
+                                    <a href={link} target="_blank" aria-label={icon} rel="noopener noreferrer">
                                         {Icon && <Icon className="text-lg mr-8 -text--primary hover:-text--lightgray" />}
                                     </a>
                                 </motion.li>

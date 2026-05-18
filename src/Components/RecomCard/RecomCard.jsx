@@ -53,7 +53,8 @@ export default function RecomCard() {
                         <p className="font-Manrope text-xl font-medium  -text--primary">{item.name}</p>
                         <div className='flex items-center'>
                             <p className="text-base mr-2 -text--primary">{item.title}</p>
-                            <a href={item.linkedin} target="new"><FaLinkedinIn className="-text--primary cursor-pointer hover:-text--lightgray" /></a>
+                            <a href={item.linkedin} target="_blank" aria-label="LinkedIn"
+                            rel="noopener noreferrer" ><FaLinkedinIn className="-text--primary cursor-pointer hover:-text--lightgray" aria-hidden="true"/></a>
                         </div>
                     </div>
                     <img className="object-over object-center rounded-full border border-solid -border--lightgray w-10 h-10" src={item.img} alt={item.name} />
