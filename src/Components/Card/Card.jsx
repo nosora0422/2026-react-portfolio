@@ -34,6 +34,8 @@ export default function Card({ type, title, description, path, column, skills, o
                         className="w-full object-cover object-center aspect-4/3 rounded-lg" 
                         src={path} 
                         alt={title}
+                        loading="lazy"
+                        decoding="async"
                     />
                     <div className="relative pt-8 px-5">
                         <p className="-text--blue text-base inline-block font-semibold">{type}</p>

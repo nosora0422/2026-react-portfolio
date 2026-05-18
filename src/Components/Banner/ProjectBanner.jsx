@@ -14,6 +14,8 @@ export default function ProjectBanner({ project }){
                                     src={hovered ? project.qr : project.img} 
                                     className="object-top object-cover aspect-4/3 sm:h-full mx-auto rounded-xl" 
                                     alt={project.title}
+                                    loading="lazy"
+                                    decoding="async"
                                     
                                 />
                                {project.qr && <button 

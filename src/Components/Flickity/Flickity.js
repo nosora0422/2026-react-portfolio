@@ -21,6 +21,8 @@ export default function Carousel({ gallery }) {
                             src={item.slideImgPath}
                             className='object-cover object-center rounded-xl' 
                             alt={item.name}
+                            loading="lazy"
+                            decoding="async"
                         />
                     </div>
                 </div>
