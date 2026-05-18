@@ -1127,6 +1127,7 @@ export default function List({ searchTerm }){
     },
     {
         id:3,
+        name: 'React-Movie-Search-App',
         type:'Front-end', 
         title:'React Movie Search App',
         skills: ['React.js','CSS','API', 'JSON'], 
