@@ -5,8 +5,8 @@ const projects = [
         title:'React Note App',
         skills: ['React.js','Tailwind','Firebase'], 
         description:'The project aimed to build a responsive web app for creating notes, images, and to-do lists. The app utilizes local storage and Firebase to store object arrays and user sign-up information.',
-        img: '../Assets/Images/thumbnail-note-app.jpg',
-        qr:'../Assets/Images/react-note-qr.jpg',
+        img: '../Assets/Images/thumbnail-note-app.webp',
+        qr:'../Assets/Images/react-note-qr.webp',
         demolink:'https://nosora0422.github.io/fullstack-note-app/',
         gitHubLink:'https://github.com/nosora0422/fullstack-note-app',
         overview: (
@@ -85,15 +85,15 @@ const projects = [
         slideImg:[
             {
                 name: 'Signup & Login',
-                slideImgPath:'../../Assets/Images/react-note-firebase.png'
+                slideImgPath:'../../Assets/Images/react-note-firebase.webp'
             },
             {
                 name: 'List, Note, Image tab',
-                slideImgPath:'../../Assets/Images/react-note-screen.png'
+                slideImgPath:'../../Assets/Images/react-note-screen.webp'
             },
             {
                 name: 'Responsive Design',
-                slideImgPath:'../../Assets/Images/react-note-mobile.png'
+                slideImgPath:'../../Assets/Images/react-note-mobile.webp'
             },
         ], 
         code:[
@@ -101,7 +101,7 @@ const projects = [
                 id:0,               
                 language:'javascript',
                 name:'Signup',
-                img:'../Assets/Images/react-note-signup.jpg',
+                img:'../Assets/Images/react-note-signup.webp',
                 codeBlock:
 `
 export default function Signup(){
@@ -197,7 +197,7 @@ export default function Signup(){
                 id:1,
                 language: 'javascript',
                 name:'Login',
-                img:'../Assets/Images/react-note-login.jpg',
+                img:'../Assets/Images/react-note-login.webp',
                 codeBlock:
 `
 export default function Login(){
@@ -256,7 +256,7 @@ export default function Login(){
                 id:2,
                 language:'javascript',
                 name: 'React-router-dom',
-                img:'../Assets/Images/react-note-dom.jpg',
+                img:'../Assets/Images/react-note-dom.webp',
                 codeBlock:
 ` 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -408,7 +408,7 @@ export default function List({ searchTerm }){
         title:'React Native Mobile app',
         skills: ['React Native','API','Figma'], 
         description:'The objective of this project was to develop a mobile application enabling users to search for places based on bussiness hours and create a favourite list.',
-        img: '../Assets/Images/thumbnail-react-native-app.jpg',
+        img: '../Assets/Images/thumbnail-react-native-app.webp',
         gitHubLink:'https://github.com/nosora0422/react-mobile-app',
         // demolink:'https://sarahnoh.ca',
         overview: (
@@ -459,15 +459,15 @@ export default function List({ searchTerm }){
         slideImg:[
             {
                 name: 'App Screens',
-                slideImgPath:'../../Assets/Images/react-mobile-screens.jpg'
+                slideImgPath:'../../Assets/Images/react-mobile-screens.webp'
             },
             {
                 name: 'Navigation Flow',
-                slideImgPath:'../../Assets/Images/react-mobile-nav.jpg'
+                slideImgPath:'../../Assets/Images/react-mobile-nav.webp'
             },
             {
                 name: 'Yelp Api',
-                slideImgPath:'../../Assets/Images/react-mobile-api.jpg'
+                slideImgPath:'../../Assets/Images/react-mobile-api.webp'
             },
         ], 
         
@@ -848,8 +848,8 @@ export default function List({ searchTerm }){
         title:'React Portfoilo Website',
         skills: ['React.js','Tailwind','Figma', 'Spline'], 
         description:'The goal of this portfolio was to create a single-page website using React.js that showcases myself as a front-end developer and introduces my projects.',
-        img: '../Assets/Images/thumbnail-react-portfolio.jpg',
-        qr:'../Assets/Images/react-portfolio-qr.jpg',
+        img: '../Assets/Images/thumbnail-react-portfolio.webp',
+        qr:'../Assets/Images/react-portfolio-qr.webp',
         gitHubLink:'https://github.com/nosora0422/react-portfolio',
         // demolink:'https://sarahnoh.ca',
         overview: (
@@ -918,11 +918,11 @@ export default function List({ searchTerm }){
         slideImg:[
             {
                 name: 'Dark Theme',
-                slideImgPath:'../../Assets/Images/react-portfolio-dark.png'
+                slideImgPath:'../../Assets/Images/react-portfolio-dark.webp'
             },
             {
                 name: 'Object Array',
-                slideImgPath:'../../Assets/Images/react-portfolio-object.png'
+                slideImgPath:'../../Assets/Images/react-portfolio-object.webp'
             },
         ], 
         code:[
@@ -1128,8 +1128,8 @@ export default function List({ searchTerm }){
         title:'React Movie Search App',
         skills: ['React.js','CSS','API', 'JSON'], 
         description:'The project aimed to develop a TMDB movie application using the TMDB API, enabling users to access movie information efficiently.',
-        img: '../Assets/Images/thumbnail-react-movie-app.jpg',
-        qr:'../Assets/Images/react-movie-qr.jpg',
+        img: '../Assets/Images/thumbnail-react-movie-app.webp',
+        qr:'../Assets/Images/react-movie-qr.webp',
         gitHubLink:'https://github.com/nosora0422/react-movie-app',
         demolink:'https://nosora0422.github.io/react-movie-app/#/',
         overview: 'Originally built with HTML, CSS, and JavaScript, the project transitioned to React.js for improved component management and API integration. Key functionalities include a search feature, saving favourites, and social media sharing, with a focus on optimizing API usage for a seamless user experience.',

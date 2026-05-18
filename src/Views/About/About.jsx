@@ -23,7 +23,7 @@ export default function About(){
                 h2first="HELLO! I'M &nbsp;"
                 //h2second takes [string arrays] or 'string'
                 h2second={['GOAL-DRIVEN','FAST-LEARNER','DETAIL-ORIENTED']}
-                avatar='about-avatar.png'
+                avatar='about-avatar.webp'
                 bannercomp={isDark ? AboutBannerDark : AboutBanner}
             />
             <section className="about section" id="first-section">
@@ -84,7 +84,7 @@ export default function About(){
                         <div className="relative col-span-12 -order-1 md:col-span-6 ">
                             <div className='flex flex-col items-center h-auto mb-24 md:mb-0 md:sticky md:top-[15vh]'>
                                 <img 
-                                    src='../../Assets/Images/Sora_Noh_Profile.jpg'
+                                    src='../../Assets/Images/Sora_Noh_Profile.webp'
                                     className="w-full max-w-[800px] md:h-[70vh] object-top object-cover rounded-2xl drop-shadow-lg" 
                                     alt="Sora Noh Profile" 
                                 />

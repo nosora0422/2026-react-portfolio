@@ -42,7 +42,7 @@ export default function Projects(){
                     h2first='I LEARN FROM'
                     h2second='CHALLENGES'
                     disc="Check out my projects that show what I’m most passionate about!"
-                    avatar='project-avatar.png'
+                    avatar='project-avatar.webp'
                     bannercomp={isDark ? ProjectBannerDark : ProjectBanner}
                 />
             </section>

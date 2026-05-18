@@ -46,7 +46,7 @@ export default function Home(){
                     h2first='FRONT-END'
                     h2second='DEVELOPER'
                     disc="I’m a front-end developer who enjoys challenges and problem-solving through code." 
-                    avatar='iphone-avatar.png'
+                    avatar='iphone-avatar.webp'
                     bannercomp={isDark ? HomeBannerDark : HomeBanner}
                     btn='Who I am ?' 
                 />

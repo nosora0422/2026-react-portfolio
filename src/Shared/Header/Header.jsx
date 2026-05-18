@@ -47,7 +47,7 @@ export default function Header(){
                 <div className="max-w-[1600px] mx-auto flex justify-between items-center">
                     <div className="w-28 h-full -bg--background py-2 px-4 rounded-full">
                         <Link to="/">
-                            <img src="../../Assets/Images/logo-gray-transp.png" className="w-full" alt="logo-img" />
+                            <img src="../../Assets/Images/logo-gray-transp.webp" className="w-full" alt="logo-img" />
                         </Link>
                     </div>
                     <div className="rounded-full -bg--nav--darkgray backdrop-blur-sm border border-solid 1px -border--lightgray">
@@ -101,7 +101,7 @@ export default function Header(){
                 <div className="mx-auto py-2 px-6 rounded-3xl -bg--nav--darkgray backdrop-blur-sm border border-solid 1px -border--lightgray">
                     <div className="flex items-center justify-between">
                         <Link to="/">
-                            <img src="../Assets/Images/Logo-white.png" className="w-14 object-cover object-center" alt="logo-img" />
+                            <img src="../Assets/Images/Logo-white.webp" className="w-14 object-cover object-center" alt="logo-img" />
                         </Link>
                         <button 
                             href="#" 
