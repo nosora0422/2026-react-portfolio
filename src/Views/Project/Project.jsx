@@ -10,14 +10,14 @@ import ProjectDetail from "../../Components/ProjectDetail/ProjectDetail";
 export default function Project(){
     const navigate = useNavigate();
 
-    const handleCardClick = (id) => {
-        navigate(`${process.env.PUBLIC_URL}/project-details/${id}`);
+    const handleCardClick = (name) => {
+        navigate(`${process.env.PUBLIC_URL}/project-details/${name}`);
     };
 
-    const { id } = useParams();
-    const currProject = Projects.find(project => project.id === parseInt(id));
+    const { name } = useParams();
+    const currProject = Projects.find(project => project.name === name);
 
-    const projectItems = Projects.filter((project) => project.id !== parseInt(id)).map(item => {
+    const projectItems = Projects.filter((project) => project.name !== name).map(item => {
         return <Card
                     key={item.id} 
                     type={item.type} 
@@ -26,12 +26,12 @@ export default function Project(){
                     path={item.img}
                     column={'lg:col-span-4'}
                     skills={item.skills}
-                    onClick={( )=> handleCardClick(item.id)} 
+                    onClick={( )=> handleCardClick(item.name)} 
                 />
     })
 
     return(
-        <div>
+        <main>
             <section className="section relative">
                 <ProjectBanner 
                     project={currProject}
@@ -52,6 +52,6 @@ export default function Project(){
                     </div>
                 </div>
             </section>
-        </div>
+        </main>
     )
 }

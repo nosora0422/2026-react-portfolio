@@ -11,8 +11,8 @@ export default function Projects(){
     const isDark = useOutletContext();
     const navigate = useNavigate();
 
-    const handleCardClick = (id) => {
-        navigate(`${process.env.PUBLIC_URL}/project-details/${id}`);
+    const handleCardClick = (name) => {
+        navigate(`${process.env.PUBLIC_URL}/project-details/${name}`);
     };
 
 
@@ -25,12 +25,12 @@ export default function Projects(){
                     path={item.img}
                     column={'lg:col-span-6'}
                     skills={item.skills} 
-                    onClick={( )=> handleCardClick(item.id)}
+                    onClick={( )=> handleCardClick(item.name)}
                 />
     })
     
     return(
-        <div className="-bg--body--backgroundColor">
+        <main className="-bg--body--backgroundColor">
             <Helmet>
                 <title>Projects - Sora Noh, Creative Front End Developer</title>
                 <meta name="description" content="Discover my passion for crafting useful, reusable, and maintainable solutions." />
@@ -66,6 +66,6 @@ export default function Projects(){
                     </div>
                 </div>
             </section>
-        </div>
+        </main>
     )
 }

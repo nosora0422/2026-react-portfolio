@@ -12,7 +12,7 @@ import { FaArrowRight } from 'react-icons/fa6';
 export default function About(){
     const isDark = useOutletContext();
     return(
-        <div>
+        <main>
             <Helmet>
                 <title>About - Sora Noh, Creative Front End Developer</title>
                 <meta name="description" content="I'm Sora Noh, and I'm passionate about Web-development. My journey into this world began in the New Media design and Web Development program, ignited by my deep curiosity about user interactions. I love problem-solving, and coding, especially using HTML, CSS, and JavaScript." />
@@ -94,6 +94,6 @@ export default function About(){
                     </div>
                 </div>
             </section>
-        </div>
+        </main>
     )
 }

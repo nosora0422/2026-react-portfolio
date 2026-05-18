@@ -34,7 +34,7 @@ export default function Home(){
     // console.log('home loading');
     // console.log(cLocation);
     return(
-        <div>
+        <main>
             <Helmet>
                 <title>Home - Sora Noh, Creative Front End Developer</title>
                 <meta name="description" content="As a passionate front-end developer, I thrive on challenges, employing code as a solution. Eager to collaborate on web development projects. Explore my portfolio for my impactful web development work!" />
@@ -84,7 +84,7 @@ export default function Home(){
                     />
                 </div>
             </section> 
-        </div>
+        </main>
         
     )
 }

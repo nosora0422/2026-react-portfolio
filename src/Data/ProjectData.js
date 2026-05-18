@@ -1,6 +1,7 @@
 const projects = [
     {
         id:0,
+        name: 'React-Note-App',
         type:'Front-end', 
         title:'React Note App',
         skills: ['React.js','Tailwind','Firebase'], 
@@ -404,6 +405,7 @@ export default function List({ searchTerm }){
     },
     {
         id:1,
+        name: 'React-Native-Mobile-App',
         type:'Front-end', 
         title:'React Native Mobile app',
         skills: ['React Native','API','Figma'], 
@@ -844,6 +846,7 @@ export default function List({ searchTerm }){
     },
     {
         id:2,
+        name: 'React-Portfolio-Website',
         type:'Front-end', 
         title:'React Portfoilo Website',
         skills: ['React.js','Tailwind','Figma', 'Spline'], 
