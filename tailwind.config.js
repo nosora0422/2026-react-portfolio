@@ -28,8 +28,8 @@ module.exports = {
         '--chip--text': 'rgba(var(--chip--text))', 
       },
       fontFamily: {
-        Josefin: ['"Josefin Sans"', ...defaultTheme.fontFamily.sans],
-        Manrope: ['"Manrope"', ...defaultTheme.fontFamily.sans],
+        Josefin: ['"Josefin Sans"', 'sans-serif'],
+        Manrope: ['Manrope', 'sans-serif'],
       },
       animation: {
         buttonAnim: 'buttonAnim 500ms ease-in',
