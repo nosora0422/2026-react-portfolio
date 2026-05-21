@@ -754,7 +754,7 @@ nav {
   border-width: 1px;
   border-style: solid;
   border-color: rgba(var(--blue));
-  background-color: transparent;
+  background-color: rgba(var(--body--backgroundColor));
   color: rgba(var(--blue));
 }
 
@@ -997,6 +997,10 @@ nav {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .box-border {
@@ -1742,6 +1746,12 @@ nav {
 
 .hover\:-text--lightgray:hover {
   color: rgba(var(--lightgray));
+}
+
+.hover\:shadow-lg:hover {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .hover\:drop-shadow-xl:hover {

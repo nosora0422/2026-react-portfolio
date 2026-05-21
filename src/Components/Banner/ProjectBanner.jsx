@@ -47,13 +47,13 @@ export default function ProjectBanner({ project }){
                                             target="_blank"
                                             className="drop-shadow-lg mt-0 lg:mt-6"
                                         />}
-                                       { project.gitHubLink && <Button
+                                        {project.gitHubLink && <Button
                                             noContainer={true}
                                             text="Github"
                                             href={project.gitHubLink}
                                             target="_blank"
                                             className="drop-shadow-lg mt-0 lg:mt-6"
-                                            variant="secondary"
+                                            variant={project.demolink ? "secondary" : "primary"}
                                         />}
                                     </div>
                                 </div>

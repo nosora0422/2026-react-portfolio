@@ -23,7 +23,7 @@ export default function Card({ type, title, description, path, column, skills, o
 
     return(
             <div 
-                className={`col-span-12 md:col-span-6 md:p-4 ${column} relative -bg--card-background rounded-2xl border border-solid -border--outline drop-shadow-md cursor-pointer hover:drop-shadow-xl`} 
+                className={`col-span-12 md:col-span-6 md:p-4 ${column} relative -bg--card-background rounded-2xl border border-solid -border--outline drop-shadow-md cursor-pointer hover:shadow-lg`} 
                 onClick={onClick}
                 onMouseEnter={handleMouseEnter} 
                 onMouseLeave={handleMouseLeave} 

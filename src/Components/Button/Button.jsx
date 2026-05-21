@@ -30,7 +30,7 @@ export default function Button({
     const content = children || (
         <>
             {text}
-            {icon && <FaArrowRight className="ml-3 inline-block" />}
+            {icon && <FaArrowRight className="ml-2 inline-block" />}
         </>
     );
 
