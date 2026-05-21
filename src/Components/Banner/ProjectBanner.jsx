@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { FaArrowRight, FaMobileScreenButton } from 'react-icons/fa6';
+import { FaMobileScreenButton } from 'react-icons/fa6';
+import Button from '../Button/Button';
 
 export default function ProjectBanner({ project }){
     const [hovered, setHovered] = useState(false);
@@ -18,15 +19,15 @@ export default function ProjectBanner({ project }){
                                     decoding="async"
                                     
                                 />
-                               {project.qr && <button 
-                                    className="hidden lg:block absolute bottom-2 left-2 px-4 rounded-full -bg--blue text-white text-base font-Manrope font-medium hover:bg-blue-800"
+                               {project.qr && <Button
+                                    noContainer={true}
+                                    icon={false}
+                                    className="hidden lg:block absolute bottom-2 left-2 px-4 py-2 mt-0 text-base font-medium"
                                     onMouseEnter={() => setHovered(true)}
                                     onMouseLeave={() => setHovered(false)}
                                 >
-                                    
                                     <FaMobileScreenButton />
-                                    
-                                </button>}
+                                </Button>}
                             </div>
                             <div className="col-span-12 py-4 md:py-6 md:px-5 lg:col-span-6">
                                 <p className="-text--blue text-base inline-block font-semibold">{project.type}</p>
@@ -39,18 +40,21 @@ export default function ProjectBanner({ project }){
                                         ))}
                                     </ul>
                                     <div className="flex flex-wrap gap-4">
-                                        {project.demolink && <a 
-                                            className="button drop-shadow-lg mt-0 lg:mt-6" 
-                                            href={project.demolink} 
-                                            target="new"
-                                        >Live Demo<FaArrowRight className="ml-2 inline-block" />
-                                        </a>}
-                                       { project.gitHubLink && <a 
-                                            className="button drop-shadow-lg mt-0 lg:mt-6" 
-                                            href={project.gitHubLink} 
-                                            target="new"
-                                        >Github<FaArrowRight className="ml-2 inline-block" />
-                                        </a>}
+                                        {project.demolink && <Button
+                                            noContainer={true}
+                                            text="Live Demo"
+                                            href={project.demolink}
+                                            target="_blank"
+                                            className="drop-shadow-lg mt-0 lg:mt-6"
+                                        />}
+                                       { project.gitHubLink && <Button
+                                            noContainer={true}
+                                            text="Github"
+                                            href={project.gitHubLink}
+                                            target="_blank"
+                                            className="drop-shadow-lg mt-0 lg:mt-6"
+                                            variant="secondary"
+                                        />}
                                     </div>
                                 </div>
                             </div>

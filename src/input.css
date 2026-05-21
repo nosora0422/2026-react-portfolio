@@ -99,6 +99,9 @@
     .button{
         @apply relative font-Manrope -bg--blue text-white inline-block py-3 px-8 mt-8 rounded-full font-semibold drop-shadow-lg transition-colors hover:bg-blue-800;
     }
+    .button-secondary{
+        @apply bg-transparent -text--blue border border-solid -border--blue hover:bg-gray-200;
+    }
     .logo{
         @apply absolute bottom-4 right-16 w-8 h-8 z-30 bg-spline bg-cover;
     }

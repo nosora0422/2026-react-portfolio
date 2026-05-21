@@ -22,10 +22,10 @@ export default function Header(){
             translateDistance = moveDistance * 1 ;
         }
         else if (pathname === '/projects'||
-                '/project-details/0'|| 
-                '/project-details/1'|| 
-                '/project-details/2'||
-                '/project-details/3'
+                pathname === '/project-details/React-Note-App'|| 
+                pathname === '/project-details/React-Native-Mobile-App'|| 
+                pathname === '/project-details/React-Portfolio-Website'||
+                pathname === '/project-details/React-Movie-Search-App'
                 ) {
             translateDistance = moveDistance * 2; 
         }
@@ -83,12 +83,10 @@ export default function Header(){
                                     <span className={
                                         (
                                             cRoute.pathname === '/projects' ||
-                                            cRoute.pathname ==='/project-details/0'|| 
-                                            cRoute.pathname ==='/project-details/1'|| 
-                                            cRoute.pathname ==='/project-details/2'||
-                                            cRoute.pathname ==='/project-details/3'||
-                                            cRoute.pathname ==='/project-details/4'||
-                                            cRoute.pathname ==='/project-details/5'
+                                            cRoute.pathname ==='/project-details/React-Note-App'|| 
+                                            cRoute.pathname ==='/project-details/React-Native-Mobile-App'|| 
+                                            cRoute.pathname ==='/project-details/React-Portfolio-Website'||
+                                            cRoute.pathname ==='/project-details/React-Movie-Search-App'
                                         ) 
                                         ? "point-dot" : "point-dot -bg--lightgray"}></span>
                                 </Link>
@@ -142,12 +140,10 @@ export default function Header(){
                                 className={
                                     (
                                         cRoute.pathname === '/projects'|| 
-                                        cRoute.pathname ==='/project-details/0'|| 
-                                        cRoute.pathname ==='/project-details/1'|| 
-                                        cRoute.pathname ==='/project-details/2'||
-                                        cRoute.pathname ==='/project-details/3'||
-                                        cRoute.pathname ==='/project-details/4'||
-                                        cRoute.pathname ==='/project-details/5'
+                                        cRoute.pathname ==='/project-details/React-Note-App'|| 
+                                        cRoute.pathname ==='/project-details/React-Native-Mobile-App'|| 
+                                        cRoute.pathname ==='/project-details/React-Portfolio-Website'||
+                                        cRoute.pathname ==='/project-details/React-Movie-Search-App'
                                     ) 
                                     ? 'py-4 px-6 text-right font-Josefin rounded-full text-lg leading-none -text--onDark -bg--nav--darkgray my-3' :'font-Josefin text-right text-lg leading-none -text--onDark py-4 px-4 my-3'}
                                 onClick={handleToggle}    
@@ -156,12 +152,10 @@ export default function Header(){
                             <span className={
                                 (
                                     cRoute.pathname === '/projects' ||
-                                    cRoute.pathname ==='/project-details/0'|| 
-                                    cRoute.pathname ==='/project-details/1'|| 
-                                    cRoute.pathname ==='/project-details/2'||
-                                    cRoute.pathname ==='/project-details/3'||
-                                    cRoute.pathname ==='/project-details/4'||
-                                    cRoute.pathname ==='/project-details/5'
+                                    cRoute.pathname ==='/project-details/React-Note-App'|| 
+                                    cRoute.pathname ==='/project-details/React-Native-Mobile-App'|| 
+                                    cRoute.pathname ==='/project-details/React-Portfolio-Website'||
+                                    cRoute.pathname ==='/project-details/React-Movie-Search-App'
                                 ) 
                                     ? "point-dot" : "point-dot -bg--lightgray"}></span>
                             </Link>

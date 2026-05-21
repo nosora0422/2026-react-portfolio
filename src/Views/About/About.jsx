@@ -88,7 +88,7 @@ export default function About(){
                                     className="w-full max-w-[800px] md:h-[70vh] object-top object-cover rounded-2xl drop-shadow-lg" 
                                     alt="Sora Noh Profile" 
                                 />
-                                <a className="button -bg--yellow -text--grey hover:bg-yellow-500" href={resume} target='new'>Resume <FaArrowRight className="ml-3 inline-block" /></a>
+                                {/* <a className="button -bg--yellow -text--grey hover:bg-yellow-500" href={resume} target='new'>Resume <FaArrowRight className="ml-3 inline-block" /></a> */}
                             </div>
                         </div>
                     </div>
