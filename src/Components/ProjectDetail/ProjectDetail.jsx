@@ -1,5 +1,4 @@
 import { motion, useScroll, useSpring } from "framer-motion";
-import Codeblock from "../CodeBlock/CodeBlock";
 import ProjectDetailCard from "../ProjectDetailCard/ProjectDetailCard";
 import Carousel from "../Flickity/Flickity";
 

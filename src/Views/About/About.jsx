@@ -5,8 +5,7 @@ import Banner from '../../Components/Banner/Banner';
 import AboutBanner from '../../Assets/Spline/AboutBanner/AboutBanner';
 import AboutBannerDark from '../../Assets/Spline/AboutBanner/AboutBannerDark';
 import Button from '../../Components/Button/Button';
-import resume from '../../Assets/Documents/sora_noh_resume.pdf'
-import { FaArrowRight } from 'react-icons/fa6';
+
 
 
 export default function About(){
