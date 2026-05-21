@@ -15,8 +15,8 @@ export default function Home(){
     const isDark = useOutletContext();
     const navigate = useNavigate();
 
-    const handleCardClick = (id) => {
-        navigate(`${process.env.PUBLIC_URL}/project-details/${id}`);
+    const handleCardClick = (item) => {
+        navigate(`${process.env.PUBLIC_URL}/project-details/${item.name}`);
     };
 
     const projectItems = ProjectData.slice(0, 2).map((item) => {
@@ -28,7 +28,7 @@ export default function Home(){
                     path={item.img}
                     column={'lg:col-span-6'}
                     skills={item.skills}
-                    onClick={( )=> handleCardClick(item.id)}
+                    onClick={() => handleCardClick(item)}
                 />
     })
     // console.log('home loading');

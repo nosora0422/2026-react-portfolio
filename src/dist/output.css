@@ -754,7 +754,7 @@ nav {
   border-width: 1px;
   border-style: solid;
   border-color: rgba(var(--blue));
-  background-color: rgba(var(--body--backgroundColor));
+  background-color: transparent;
   color: rgba(var(--blue));
 }
 
