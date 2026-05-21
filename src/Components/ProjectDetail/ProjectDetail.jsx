@@ -33,10 +33,6 @@ export default function ProjectDetail({ project }){
                             />
                         </div>
                 }
-                
-                {/* <div className="col-span-12">
-                    {project.code && <Codeblock project={project}/>}
-                </div> */}
             </div>
         </div>
     )

@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
-import { FaMobileScreenButton } from 'react-icons/fa6';
+import React from 'react';
 import Button from '../Button/Button';
 
 export default function ProjectBanner({ project }){
-    const [hovered, setHovered] = useState(false);
-
     return(
             <div className="relative h-screen flex justify-center items-center lg:h-screen md:py-" key={project.id}>
                 <div className="my-grid max-w-[1200px] px-6 sm:pt-10">
@@ -12,22 +9,12 @@ export default function ProjectBanner({ project }){
                         <div className="my-grid">
                             <div className='relative col-span-12 max-h-[60vh] mx-auto drop-shadow-lg lg:col-span-6'>
                                 <img 
-                                    src={hovered ? project.qr : project.img} 
+                                    src={project.img} 
                                     className="object-top object-cover aspect-4/3 sm:h-full mx-auto rounded-xl" 
                                     alt={project.title}
                                     loading="lazy"
                                     decoding="async"
-                                    
                                 />
-                               {project.qr && <Button
-                                    noContainer={true}
-                                    icon={false}
-                                    className="hidden lg:block absolute bottom-2 left-2 px-4 py-2 mt-0 text-base font-medium"
-                                    onMouseEnter={() => setHovered(true)}
-                                    onMouseLeave={() => setHovered(false)}
-                                >
-                                    <FaMobileScreenButton />
-                                </Button>}
                             </div>
                             <div className="col-span-12 py-4 md:py-6 md:px-5 lg:col-span-6">
                                 <p className="-text--blue text-base inline-block font-semibold">{project.type}</p>

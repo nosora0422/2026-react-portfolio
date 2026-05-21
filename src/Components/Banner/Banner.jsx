@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
 
@@ -13,7 +13,9 @@ export default function Banner(props){
     return(
         <div className="mx-auto h-svh relative flex justify-center items-center">
             <div className="w-screen h-svh">
-                <BannerComponent />
+                <Suspense fallback={<div className="w-full h-full -bg--body--backgroundColor" />}>
+                    <BannerComponent />
+                </Suspense>
             </div>
             <div className="px-6 absolute">
                 <div className="max-w-1200 flex flex-col items-start z-10">

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_portfolio=self.webpackChunkreact_portfolio||[]).push([[827],{1827:(e,s,t)=>{t.r(s),t.d(s,{default:()=>c});var n=t(6573),r=t(184);function c(){return(0,r.jsx)(n.Z,{scene:"https://prod.spline.design/d2NfviExSNwu4AhV/scene.splinecode"})}}}]);
+//# sourceMappingURL=827.cd22daf0.chunk.js.map

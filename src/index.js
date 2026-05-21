@@ -6,13 +6,13 @@ import './reset.css';
 import App from './App';
 
 // Fonts
-import "@fontsource/josefin-sans/400.css";
-import "@fontsource/josefin-sans/600.css";
-import "@fontsource/josefin-sans/700.css";
+import "@fontsource/josefin-sans/latin-400.css";
+import "@fontsource/josefin-sans/latin-600.css";
+import "@fontsource/josefin-sans/latin-700.css";
 
-import "@fontsource/manrope/400.css";
-import "@fontsource/manrope/600.css";
-import "@fontsource/manrope/700.css";
+import "@fontsource/manrope/latin-400.css";
+import "@fontsource/manrope/latin-600.css";
+import "@fontsource/manrope/latin-700.css";
 
 // Lazy-loaded routes
 const Home = lazy(() => import('./Views/Home/Home'));

@@ -1,12 +1,12 @@
+import { lazy } from 'react';
 import { useOutletContext } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
 import Banner from '../../Components/Banner/Banner';
-import AboutBanner from '../../Assets/Spline/AboutBanner/AboutBanner';
-import AboutBannerDark from '../../Assets/Spline/AboutBanner/AboutBannerDark';
 import Button from '../../Components/Button/Button';
 
-
+const AboutBanner = lazy(() => import('../../Assets/Spline/AboutBanner/AboutBanner'));
+const AboutBannerDark = lazy(() => import('../../Assets/Spline/AboutBanner/AboutBannerDark'));
 
 export default function About(){
     const isDark = useOutletContext();

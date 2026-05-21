@@ -1,3 +1,4 @@
+import { lazy } from 'react';
 import { useNavigate, useOutletContext } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
@@ -6,9 +7,9 @@ import Button from '../../Components/Button/Button';
 import Card from '../../Components/Card/Card';
 import RecomCard from '../../Components/RecomCard/RecomCard';
 import ProjectData from '../../Data/ProjectData';
-import HomeBanner from "../../Assets/Spline/HomeBanner/HomeBanner";
-import HomeBannerDark from '../../Assets/Spline/HomeBanner/HomeBannerDark';
 
+const HomeBanner = lazy(() => import("../../Assets/Spline/HomeBanner/HomeBanner"));
+const HomeBannerDark = lazy(() => import("../../Assets/Spline/HomeBanner/HomeBannerDark"));
 
 export default function Home(){
     
@@ -31,8 +32,6 @@ export default function Home(){
                     onClick={() => handleCardClick(item)}
                 />
     })
-    // console.log('home loading');
-    // console.log(cLocation);
     return(
         <main>
             <Helmet>
