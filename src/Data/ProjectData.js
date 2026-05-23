@@ -1,17 +1,21 @@
-const projects = [
+﻿const projects = [
     {
         id:0,
         name: 'React-Note-App',
         type:'Front-end', 
         title:'React Note App',
         skills: ['React.js','Tailwind','Firebase'], 
-        description:'The project aimed to build a responsive web app for creating notes, images, and to-do lists. The app utilizes local storage and Firebase to store object arrays and user sign-up information.',
+        description:'A responsive React note app for creating notes, image notes, and to-do lists, using localStorage for saved app data and Firebase Authentication for Google login and email sign-up.',
         img: '../Assets/Images/thumbnail-note-app.webp',
         qr:'../Assets/Images/react-note-qr.webp',
         demolink:'https://nosora0422.github.io/fullstack-note-app/',
         gitHubLink:'https://github.com/nosora0422/fullstack-note-app',
         overview: (
-        <p>The objective of this project was to develop a responsive web application capable of <span className="font-semibold -text--blue">creating notes, managing images, and maintaining to-do lists.</span> The app made it easier to organize notes by separating them into tabs so that users can write various notes according to their purpose and preferences. The app leverages both <span className="font-semibold -text--blue">local storage and Firebase to store object arrays</span> and user sign-up information. </p>
+            <div>
+                <p>I built this responsive note app as a <span className="font-semibold -text--blue">test-ready front-end product</span>, moving from mid-fi wireframes into a working React experience for notes, image notes, and to-do lists.</p><br/>
+                <p>I used <span className="font-semibold -text--blue">CSS and Tailwind CSS</span> to create fast, consistent UI styling across desktop and mobile screens, then iterated through manual testing to refine layout, interaction states, and responsive behavior.</p><br/>
+                <p>The app includes <span className="font-semibold -text--blue">Firebase Authentication</span> for Google login and email sign-up, plus scoped localStorage so guest and signed-in users can save notes, todos, and images in the browser.</p>
+            </div>
         ),
         keyPoint:[
             { 
@@ -20,15 +24,15 @@ const projects = [
                 content:[
                     {
                         list:'To-Do List',
-                        listDisc:'Users can create multiple To-do lists mark individual list items as completed and check progress.'
+                        listDisc:'Users can create multiple to-do lists, mark individual items as completed, and check their progress.'
                     },
                     {
                         list:'Note',
-                        listDisc:'The app includes features such as rich text formatting, categorization, and sorting for enhanced note management.'
+                        listDisc:'Users can write, organize, search, sort, and filter notes based on their purpose and preferences.'
                     },
                     {
                         list:'Image Note',
-                        listDisc:'The app enables users to upload, view, and manage images within the application.'
+                        listDisc:'Users can upload, view, and manage image-based notes within the application.'
                     }
                 ]
             },
@@ -38,48 +42,20 @@ const projects = [
                 content:[
                     {
                         list:'Search',
-                        listDisc:'Users can effortlessly search for items by entering either titles or content.'
+                        listDisc:'Users can quickly search saved items by title or content.'
                     },
                     {
                         list:'Sort and Filter',
-                        listDisc:'The sort and filter features enable the users to organize notes efficiently.'
+                        listDisc:'Sorting and filtering tools help users organize notes, image notes, and to-do lists more efficiently.'
                     },
-                    {
-                        list:'Sign up and Login',
-                        listDisc:'The app securely stores user names when signing up and displays them on the navigation bar with welcoming message, contributing to an enhanced user experience and enhance security.'
-                    }
-                ]
-            },
-            { 
-                id:3,
-                cardTitle:'Data',
-                content:[
                     {
                         list:'Local Storage',
-                        listDisc:'The app seamlessly access notes, images, and to-do lists across sessions with local storage.'
+                        listDisc:'The app saves notes, image notes, and to-do lists in localStorage so data remains available across browser sessions.'
                     },
                     {
-                        list:'Firebase',
-                        listDisc:'Users securely sign up and log in with Firebase Authentication.'
-                    },
-                ]
-            },
-            { 
-                id:4,
-                cardTitle:'Key Elements',
-                content:[
-                    {
-                        list:'React Routes',
-                        listDisc:'Implemented {Routes, Route, BrowserRouter, Link} from \'react-router-dom\' to enhance SEO and bookmarking by assigning specific paths for each page.'
-                    },
-                    {
-                        list:'Components',
-                        listDisc:'Reusable components for seamless integration with other elements such as the search bar and the button groups.'
-                    },
-                    {
-                        list:'useState() Hook',
-                        listDisc:'useState() was used for the note components to set the initial value and return updated value when entering data.'
-                    },
+                        list:'Firebase Authentication',
+                        listDisc:'Users can sign up with email or log in with Google through Firebase Authentication, with signed-in sessions separated from guest data.'
+                    }
                 ]
             },
         ],
@@ -296,7 +272,7 @@ const projects = [
                     },
                     {
                         list:'Share List',
-                        listDisc:'User’s favourite list can be shared on their social media such as Facebook, WhatsApp, and Twitter. '
+                        listDisc:'Userâ€™s favourite list can be shared on their social media such as Facebook, WhatsApp, and Twitter. '
                     }
                 ]
             },
@@ -341,3 +317,5 @@ const projects = [
 ]
 
 export default projects;
+
+
