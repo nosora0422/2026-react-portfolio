@@ -115,7 +115,7 @@
                     'The app supports category filtering for coffee, restaurants, pubs, karaoke, and nightlife, plus a dedicated keyword search flow for flexible discovery.'
                 },
                 {
-                list: 'Detailed Venue Pages',
+                list: 'Detailed Venue Info',
                 listDisc:
                     'Each place includes photos, rating, address, phone number, business hours, a Yelp link, and a Google Maps shortcut.'
                 },
