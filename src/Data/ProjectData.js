@@ -1,4 +1,4 @@
-const projects = [
+﻿const projects = [
     {
         id:0,
         name: 'React-Note-App',
@@ -75,76 +75,94 @@ const projects = [
         ]
     },
     {
-        id:1,
+        id: 1,
         name: 'React-Native-Mobile-App',
-        type:'Front-end', 
-        title:'React Native Mobile app',
-        skills: ['React Native','API','Figma'], 
-        description:'The objective of this project was to develop a mobile application enabling users to search for places based on bussiness hours and create a favourite list.',
+        type: 'Front-end',
+        title: 'Late-Night Place Finder App',
+        skills: ['React Native', 'Expo', 'RESTful API', 'AsyncStorage'],
+        description:
+            'A React Native mobile app that helps users discover restaurants, cafes, pubs, karaoke spots, and nightlife venues that are open at a selected time, then save favorite places for later.',
+
         img: '../Assets/Images/thumbnail-react-native-app.webp',
-        gitHubLink:'https://github.com/nosora0422/react-mobile-app',
-        // demolink:'https://sarahnoh.ca',
+        gitHubLink: 'https://github.com/nosora0422/react-mobile-app',
+        videoLink: 'https://player.vimeo.com/video/1196553472',
+
         overview: (
             <div>
-                <p>The target audience for this app is night owls who predominantly engage during the evening hours, with <span className="font-semibold -text--blue">convenient access to venues where they can stay late</span>. Initially, a hard-coded data file was utilized to establish the fundamental framework. Subsequently, integration with <span className="font-semibold -text--blue">the Yelp API</span> was implemented to enable dynamic data usage. <br/><br/>  A combination of <span className="font-semibold -text--blue">Native Stack Navigator and Bottom Bar Navigator</span> was employed to design user paths, simplifying the structure by rendering information on a single screen despite of different user paths. <br/><br/>The app was built with Expo and Android Studio, incorporating various libraries to create diverse UI designs. A future enhancement includes incorporating a feature to search for places based on the current location to enhance the User Experience.
-                </p>
-
+            <p>
+                This project was designed for users looking for places to visit in the evening, especially night owls who want to quickly find venues that are still open. The app uses <span className="font-semibold -text--blue">the Yelp Fusion API</span> to fetch real business data, including photos, ratings, addresses, phone numbers, business hours, and Yelp profile links.
+                <br /><br />
+                I built the experience around a clear mobile user flow: users can select a city, choose the time they want to stay out until, filter results by category, search directly by keyword, and open a detailed venue page. The app uses <span className="font-semibold -text--blue">Native Stack Navigator and Bottom Tab Navigator</span> to separate the main flows while keeping navigation simple and familiar.
+                <br /><br />
+                To improve the user experience, I added onboarding screens, nickname personalization, persistent favorite lists with <span className="font-semibold -text--blue">AsyncStorage</span>, and a settings screen where users can update or clear local data. The interface was built with Expo, React Native Elements, custom theming, and Archivo typography to create a bold dark-mode visual style optimized for mobile browsing.
+            </p>
             </div>
         ),
-        keyPoint:[
-            { 
-                id:0,
-                cardTitle:'.Feature',
-                content:[
-                    {
-                        list:'Search Place',
-                        listDisc:'This component efficiently handles the rendering of detailed project information fetched from the data file.'
-                    },
-                    {
-                        list:'Filter by category',
-                        listDisc:'Users can navigate through cities and refine their search results by selecting specific categories, streamlining their exploration process.'
-                    },
-                    {
-                        list:'Save to List',
-                        listDisc:'Each venue discovered can be effortlessly added to the user\'s personalized favourite list, ensuring easy access for future reference.'
-                    },
-                ]
+
+        keyPoint: [
+            {
+            id: 0,
+            cardTitle: 'Features',
+            content: [
+                {
+                list: 'Time-Based Place Discovery',
+                listDisc:
+                    'Users can choose a city and target time, then browse Yelp results filtered to places that are open at that time.'
+                },
+                {
+                list: 'Category and Keyword Search',
+                listDisc:
+                    'The app supports category filtering for coffee, restaurants, pubs, karaoke, and nightlife, plus a dedicated keyword search flow for flexible discovery.'
+                },
+                {
+                list: 'Detailed Venue Pages',
+                listDisc:
+                    'Each place includes photos, rating, address, phone number, business hours, a Yelp link, and a Google Maps shortcut.'
+                },
+                {
+                list: 'Favorite List',
+                listDisc:
+                    'Users can save venues to a local favorite list, revisit saved places, and remove items with confirmation feedback.'
+                }
+            ]
             },
-            { 
-                id:1,
-                cardTitle:'Key elements',
-                content:[
-                    {
-                        list:'Asyncstorage',
-                        listDisc:'Utilizing AsyncStorage, the app stores users\' favourite lists locally, ensuring seamless access to saved venues.'
-                    },
-                    {
-                        list:'Axios',
-                        listDisc:'Axios was chosen for its streamlined error handling capabilities during HTTP requests, offering built-in support for efficiently managing network errors, server errors, and other unexpected issues.'
-                    },
-                    {
-                        list:'RNE Theme',
-                        listDisc:'The app\'s UI is enhanced with the React Native Elements (RNE) Theme, ensuring a cohesive and visually appealing design across different components and screens.'
-                    }
-                ]
-            },
+            {
+            id: 1,
+            cardTitle: 'Technical Highlights',
+            content: [
+                {
+                list: 'Yelp API Integration',
+                listDisc:
+                    'Implemented Axios requests to Yelp Fusion API endpoints for business search and detailed business data, including loading and error states.'
+                },
+                {
+                list: 'Persistent Local Storage',
+                listDisc:
+                    'Used AsyncStorage to persist saved favorite places and user nickname data across app sessions.'
+                },
+                {
+                list: 'Custom Mobile UI System',
+                listDisc:
+                    'Created a cohesive dark-mode interface using React Native Elements theming, custom components, icon-based actions, carousel imagery, and responsive mobile layouts.'
+                }
+            ]
+            }
         ],
-        slideImg:[
+
+        slideImg: [
             {
-                name: 'App Screens',
-                slideImgPath:'../../Assets/Images/react-mobile-screens.webp'
+            name: 'App Screens',
+            slideImgPath: '../../Assets/Images/react-mobile-screens-v2.webp'
             },
             {
-                name: 'Navigation Flow',
-                slideImgPath:'../../Assets/Images/react-mobile-nav.webp'
+            name: 'Navigation Flow',
+            slideImgPath: '../../Assets/Images/react-mobile-nav-v2.webp'
             },
             {
-                name: 'Yelp Api',
-                slideImgPath:'../../Assets/Images/react-mobile-api.webp'
-            },
-        ], 
-        
-        
+            name: 'Yelp API',
+            slideImgPath: '../../Assets/Images/react-mobile-api-v2.webp'
+            }
+        ]
     },
     {
         id:2,

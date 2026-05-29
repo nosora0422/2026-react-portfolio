@@ -33,6 +33,27 @@ export default function ProjectDetail({ project }){
                             />
                         </div>
                 }
+                {
+                    project.videoLink &&
+                        <div className="col-span-12 mb-5">
+                            <div className='-bg--card-background pt-6 pb-10 rounded-2xl border border-solid -border--outline px-6 md:p-10 shadow-md'>
+                                <div className='w-full box-border'>
+                                    <p className='blue-lable mb-10'>Demo Video</p>
+                                    <div className='flex justify-center items-center rounded-xl box-border bg-black'>
+                                        <iframe
+                                            src={project.videoLink}
+                                            title="Project Video"
+                                            width="100%"
+                                            height="500"
+                                            frameBorder="0"
+                                            allow="autoplay; fullscreen"
+                                            allowFullScreen
+                                        ></iframe>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                }
             </div>
         </div>
     )
