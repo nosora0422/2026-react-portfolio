@@ -1,4 +1,4 @@
-﻿const projects = [
+const projects = [
     {
         id:0,
         name: 'React-Note-App',
