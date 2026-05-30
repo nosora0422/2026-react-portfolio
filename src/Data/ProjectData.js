@@ -2,8 +2,8 @@ const projects = [
     {
         id:0,
         name: 'React-Note-App',
-        type:'Front-end', 
-        title:'React Note App',
+        type:'Full-stack', 
+        title:'Notely - React Note App',
         skills: ['React.js','Tailwind','Firebase'], 
         description:'A responsive React note app for creating notes, image notes, and to-do lists, using localStorage for saved app data and Firebase Authentication for Google login and email sign-up.',
         img: '../Assets/Images/thumbnail-note-app.webp',
@@ -12,7 +12,7 @@ const projects = [
         gitHubLink:'https://github.com/nosora0422/fullstack-note-app',
         overview: (
             <div>
-                <p>I built this responsive note app as a <span className="font-semibold -text--blue">test-ready front-end product</span>, moving from mid-fi wireframes into a working React experience for notes, image notes, and to-do lists.</p><br/>
+                <p>I built this responsive note app as a <span className="font-semibold -text--blue">test-ready full-stack product</span>, moving from mid-fi wireframes into a working React experience for notes, image notes, and to-do lists.</p><br/>
                 <p>I used <span className="font-semibold -text--blue">CSS and Tailwind CSS</span> to create fast, consistent UI styling across desktop and mobile screens, then iterated through manual testing to refine layout, interaction states, and responsive behavior.</p><br/>
                 <p>The app includes <span className="font-semibold -text--blue">Firebase Authentication</span> for Google login and email sign-up, plus scoped localStorage so guest and signed-in users can save notes, todos, and images in the browser.</p>
             </div>
@@ -62,15 +62,15 @@ const projects = [
         slideImg:[
             {
                 name: 'Signup & Login',
-                slideImgPath:'../../Assets/Images/react-note-firebase.webp'
+                slideImgPath:'../../Assets/Images/react-note-login-firebase.webp'
             },
             {
                 name: 'List, Note, Image tab',
-                slideImgPath:'../../Assets/Images/react-note-screen.webp'
+                slideImgPath:'../../Assets/Images/react-note-list-firebase.webp'
             },
             {
                 name: 'Responsive Design',
-                slideImgPath:'../../Assets/Images/react-note-mobile.webp'
+                slideImgPath:'../../Assets/Images/react-note-mobile-screen.webp'
             },
         ]
     },
