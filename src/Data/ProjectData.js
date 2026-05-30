@@ -5,16 +5,16 @@ const projects = [
         type:'Full-stack', 
         title:'Notely - React Note App',
         skills: ['React.js','Tailwind','Firebase'], 
-        description:'A responsive React note app for creating notes, image notes, and to-do lists, using localStorage for saved app data and Firebase Authentication for Google login and email sign-up.',
-        img: '../Assets/Images/thumbnail-note-app.webp',
+        description:'A responsive React note app for creating notes, image notes, and to-do lists, using Firestore for saved app data and Firebase Authentication for Google login and email sign-up.',
+        img: '../Assets/Images/thumbnail-notely-react-app.webp',
         qr:'../Assets/Images/react-note-qr.webp',
         demolink:'https://nosora0422.github.io/fullstack-note-app/',
         gitHubLink:'https://github.com/nosora0422/fullstack-note-app',
         overview: (
             <div>
                 <p>I built this responsive note app as a <span className="font-semibold -text--blue">test-ready full-stack product</span>, moving from mid-fi wireframes into a working React experience for notes, image notes, and to-do lists.</p><br/>
-                <p>I used <span className="font-semibold -text--blue">CSS and Tailwind CSS</span> to create fast, consistent UI styling across desktop and mobile screens, then iterated through manual testing to refine layout, interaction states, and responsive behavior.</p><br/>
-                <p>The app includes <span className="font-semibold -text--blue">Firebase Authentication</span> for Google login and email sign-up, plus scoped localStorage so guest and signed-in users can save notes, todos, and images in the browser.</p>
+                <p>I used <span className="font-semibold -text--blue">CSS and Tailwind CSS</span> to create fast, consistent UI styling across desktop and mobile screens, then <span className="font-semibold -text--blue">iterated through manual testing</span> to refine layout, interaction states, and responsive behavior.</p><br/>
+                <p>The app includes <span className="font-semibold -text--blue">Firebase Authentication</span> for Google login and email sign-up, plus <span className="font-semibold -text--blue">Firestore</span> for signed-in users to save notes, todos, and images and browse them across devices.</p>
             </div>
         ),
         keyPoint:[
@@ -38,8 +38,12 @@ const projects = [
             },
             { 
                 id:1,
-                cardTitle:'Feature',
+                cardTitle:'Technical Highlights',
                 content:[
+                    {
+                        list:'Firebase Authentication and Firestore',
+                        listDisc:'Users can sign up with email or log in with Google through Firebase Authentication, all data in the app is handled securely on the Firestore.'
+                    },
                     {
                         list:'Search',
                         listDisc:'Users can quickly search saved items by title or content.'
@@ -48,14 +52,7 @@ const projects = [
                         list:'Sort and Filter',
                         listDisc:'Sorting and filtering tools help users organize notes, image notes, and to-do lists more efficiently.'
                     },
-                    {
-                        list:'Local Storage',
-                        listDisc:'The app saves notes, image notes, and to-do lists in localStorage so data remains available across browser sessions.'
-                    },
-                    {
-                        list:'Firebase Authentication',
-                        listDisc:'Users can sign up with email or log in with Google through Firebase Authentication, with signed-in sessions separated from guest data.'
-                    }
+                    
                 ]
             },
         ],
