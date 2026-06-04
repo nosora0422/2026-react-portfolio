@@ -78,7 +78,7 @@ const projects = [
         title: 'Late-Night Place Finder App',
         skills: ['React Native', 'Expo', 'RESTful API', 'AsyncStorage'],
         description:
-            'A React Native mobile app that helps users discover restaurants, cafes, pubs, karaoke spots, and nightlife venues that are open at a selected time, then save favorite places for later.',
+            'A React Native mobile app that helps users discover places that are open at a selected time. Whether planning an early morning coffee or a late-night hangout, this app helps users instantly discover restaurants, pubs, and cafes open exactly when they need them, and save their favorites for later.',
 
         img: '../Assets/Images/thumbnail-react-native-app.webp',
         gitHubLink: 'https://github.com/nosora0422/react-mobile-app',
@@ -87,7 +87,7 @@ const projects = [
         overview: (
             <div>
             <p>
-                This project was designed for users looking for places to visit in the evening, especially night owls who want to quickly find venues that are still open. The app uses <span className="font-semibold -text--blue">the Yelp Fusion API</span> to fetch real business data, including photos, ratings, addresses, phone numbers, business hours, and Yelp profile links.
+                This project was designed for users looking for places to visit in early morning or late night, especially night owls who want to quickly find places that are still open. The app uses <span className="font-semibold -text--blue">the Yelp Fusion API</span> to fetch real business data, including photos, ratings, addresses, phone numbers, business hours, and Yelp profile links.
                 <br /><br />
                 I built the experience around a clear mobile user flow: users can select a city, choose the time they want to stay out until, filter results by category, search directly by keyword, and open a detailed venue page. The app uses <span className="font-semibold -text--blue">Native Stack Navigator and Bottom Tab Navigator</span> to separate the main flows while keeping navigation simple and familiar.
                 <br /><br />
@@ -112,7 +112,7 @@ const projects = [
                     'The app supports category filtering for coffee, restaurants, pubs, karaoke, and nightlife, plus a dedicated keyword search flow for flexible discovery.'
                 },
                 {
-                list: 'Detailed Venue Info',
+                list: 'Detailed Business Info',
                 listDisc:
                     'Each place includes photos, rating, address, phone number, business hours, a Yelp link, and a Google Maps shortcut.'
                 },
