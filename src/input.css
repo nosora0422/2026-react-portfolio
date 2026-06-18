@@ -111,4 +111,10 @@
     .section{
         @apply -bg--body--backgroundColor border-solid border-t -border--outline;
     }
+    .recom-card__comment--collapsed{
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+    }
 }

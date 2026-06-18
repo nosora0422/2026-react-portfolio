@@ -4,8 +4,8 @@ const projects = [
         name: 'React-Note-App',
         type:'Full-stack', 
         title:'Notely - React Note App',
-        skills: ['React.js','Tailwind','Firebase'], 
-        description:'A responsive React note app for creating notes, image notes, and to-do lists, using Firestore for saved app data and Firebase Authentication for Google login and email sign-up.',
+        skills: ['React.js','Tailwind','Firebase', 'Codex'], 
+        description:'A responsive React note app for creating notes, image notes, and to-do lists, designed to support productive daily life with Firestore-powered data storage and Firebase Authentication for Google login and email sign-up.',
         img: '../Assets/Images/thumbnail-notely-react-app.webp',
         qr:'../Assets/Images/react-note-qr.webp',
         demolink:'https://nosora0422.github.io/fullstack-note-app/',
@@ -56,6 +56,31 @@ const projects = [
                 ]
             },
         ],
+        challenges:[
+            { 
+                id:0,
+                cardTitle:'Challenges & Solutions',
+                content:[
+                    {
+                        list:'User authentication and Data Management',
+                        challenges:'There are three types of users in the app: Guest, Email Sign-up, and Google Login. Managing user authentication and data storage for these different user types was a key challenge, especially ensuring that data was securely stored and properly associated with the correct user accounts.',
+                        solutions:(
+                            'used local storage for guest users to temporarily store their notes, while implementing Firebase Authentication for email sign-up and Google login users. This allowed me to securely manage user data in Firestore, ensuring that each user\'s notes were properly stored and accessible across sessions. I also implemented logic to handle data synchronization between local storage and Firestore when a guest user signed up or logged in, providing a seamless transition while maintaining data integrity.'
+                        )
+                    },
+                    {
+                        list:'Managing Persistent Data Storage',
+                        challenges:'A key challenge was making sure notes were saved beyond the current browser session. At first, local component state was enough for testing the UI, but it was not suitable for storing real user data permanently.',
+                        solutions:'I connected the app to Firebase Firestore so notes could be stored, retrieved, updated, and deleted from a database. This helped me understand how frontend applications communicate with cloud services and how to structure data for CRUD operations.'
+                    },
+                    {
+                        list:'Learning Firestore Integration With AI Support',
+                        challenges:'Connecting the React app to Firestore was new to me, especially setting up the database connection and understanding how to read and write documents correctly.',
+                        solutions:'I used AI as a learning and debugging assistant while implementing the Firestore connection. Instead of relying on AI to write the entire feature, I used it to explain Firebase concepts, troubleshoot errors, and clarify how methods like adding, fetching, updating, and deleting documents worked. This helped me move faster while still understanding the implementation.'
+                    }
+                ]
+            },
+        ],
         slideImg:[
             {
                 name: 'Signup & Login',
@@ -78,7 +103,7 @@ const projects = [
         title: 'Late-Night Place Finder App',
         skills: ['React Native', 'Expo', 'RESTful API', 'AsyncStorage'],
         description:
-            'A React Native mobile app that helps users discover places that are open at a selected time. Whether planning an early morning coffee or a late-night hangout, this app helps users instantly discover restaurants, pubs, and cafes open exactly when they need them, and save their favorites for later.',
+            'A React Native mobile app that helps users discover places that are open at a selected time. Whether planning an early morning coffee or a late-night hangout, this app helps users instantly discover places open exactly when they need them.',
 
         img: '../Assets/Images/thumbnail-react-native-app.webp',
         gitHubLink: 'https://github.com/nosora0422/react-mobile-app',
@@ -145,7 +170,29 @@ const projects = [
             ]
             }
         ],
-
+        challenges:[
+            { 
+                id:0,
+                cardTitle:'Challenges & Solutions',
+                content: [
+                    {
+                      list: 'Lightweight Data Storage for Favorite List',
+                      challenges: 'Implementing a persistent favorite list that could store user data across sessions without a backend database was a key challenge. I needed a solution that was simple to implement within the React Native environment and efficient for storing small amounts of structured data.',
+                      solutions: 'I implemented AsyncStorage as a lightweight local persistence layer for the favorite list. Since the app only needed to store a small amount of structured user data, AsyncStorage was an efficient choice that avoided the overhead of a backend database. I stored favorite places as serialized JSON, then created reusable logic to save, retrieve, add, and remove items from storage. This allowed the app to preserve user favorites across sessions while keeping the implementation simple, fast, and well-suited to React Native.'
+                    },
+                    {
+                      list: 'Mobile-Specific Challenges',
+                      challenges: 'Transitioning from web development to mobile also brought some great learning opportunities as a front-end developer. Web views are incredibly forgiving, but mobile requires dealing with physical device constraints.',
+                      solutions: 'I solved these mobile-specific layout issues by designing the interface around native device behavior instead of treating it like a web page. I used SafeAreaProvider to prevent key UI elements, such as the floating tab bar, from overlapping with notches, rounded corners, and system navigation areas. For forms, I implemented KeyboardAvoidingView so inputs remained accessible when the native keyboard appeared. I also used FlatList for longer lists to improve rendering performance by only mounting visible items, which helped maintain a smooth scrolling experience on mobile devices.'
+                    },
+                    {
+                      list: 'Refresh Data After Deletion',
+                      challenges: 'Ensuring that the app\'s data status remained consistent within the application after a user deleted an item from their favorite list was a challenge. I needed to make sure the UI updated correctly and reflected the current state of the data.',
+                      solutions: 'I handled this by keeping the favorite list state synchronized with AsyncStorage after every delete action. When a user removed an item, I updated the stored data first and then refreshed the component state so the UI immediately reflected the latest favorite list. I also used useEffect to load the most recent saved data when the favorite screen mounted, ensuring the screen always displayed the current storage state. This helped prevent stale UI, improved data consistency, and created a more reliable user experience after deletion.'
+                    }
+                  ]
+            },
+        ],
         slideImg: [
             {
             name: 'App Screens',

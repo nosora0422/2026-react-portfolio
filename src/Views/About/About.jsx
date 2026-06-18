@@ -64,7 +64,7 @@ export default function About(){
                                 <div>
                                     <div className="mb-14">
                                         <h5>Programming Language & Library</h5>
-                                        <p className="body--gray">HTML, CSS, JavaScript, PHP, React.js, React Native, Tailwind, Bootstrap</p>
+                                        <p className="body--gray">HTML, CSS, JavaScript, PHP, React.js, React Native, Next.js Tailwind, Bootstrap</p>
                                     </div>
         
                                     <div className="mb-14">
@@ -74,7 +74,7 @@ export default function About(){
         
                                     <div className="mb-14">
                                         <h5>Database & System</h5>
-                                        <p className="body--gray">MySQL, Webflow, Wordpress, Firebase</p>
+                                        <p className="body--gray">MySQL, Webflow, Wordpress, Shopify, Firebase</p>
                                     </div>
                                 </div>
                             </div>

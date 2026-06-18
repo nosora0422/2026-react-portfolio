@@ -23,6 +23,12 @@ export default function ProjectDetail({ project }){
                         <ProjectDetailCard 
                             project={project.keyPoint}
                         />
+                        {project.challenges &&
+                            <ProjectDetailCard 
+                                width="full"
+                                project={project.challenges}
+                            />
+                        }
                     </div>
                 </div>
                 {
