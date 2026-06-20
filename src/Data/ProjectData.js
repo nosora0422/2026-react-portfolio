@@ -62,16 +62,26 @@ const projects = [
                 cardTitle:'Challenges & Solutions',
                 content:[
                     {
-                        list:'User authentication and Data Management',
-                        challenges:'There are three types of users in the app: Guest, Email Sign-up, and Google Login. Managing user authentication and data storage for these different user types was a key challenge, especially ensuring that data was securely stored and properly associated with the correct user accounts.',
-                        solutions:(
-                            'I used local storage for guest users to temporarily store their notes, while implementing Firebase Authentication for email sign-up and Google login users. This allowed me to securely manage user data in Firestore, ensuring that each user\'s notes were properly stored and accessible across sessions. I also implemented logic to handle data synchronization between local storage and Firestore when a guest user signed up or logged in, providing a seamless transition while maintaining data integrity.'
+                        list:'Separating Guest and Logged-In User Sessions',
+                        challenges:'There are  three ways to authenticate users: Guest, Email Sign-up, and Google Login. Managing user authentication and data storage for these different user types was a key challenge, especially ensuring that data was securely isolated and properly associated with the correct local or cloud environments.',
+                        solutions: (
+                            <div>
+                                <p>
+                            To keep this data separate, I built <span className="font-semibold -text--blue">a secure two-way routing system</span> using React Router. I created custom route guards (ProtectedRoute and GuestRoute) that act as gatekeepers—keeping guests safely limited to local storage pages while directing logged-in users to secure cloud pages. I also added <span className="font-semibold -text--blue">a fallback redirect layer</span> that automatically catches old, bookmarked links and sends them to the new correct URLs, <span className="font-semibold -text--blue">preventing broken pages</span> and keeping the user experience seamless.
+                                </p>
+                            </div>
                         )
                     },
                     {
-                        list:'Managing Persistent Data Storage',
-                        challenges:'A key challenge was making sure notes were saved beyond the current browser session. At first, local component state was enough for testing the UI, but it was not suitable for storing real user data permanently.',
-                        solutions:'I connected the app to Firebase Firestore so notes could be stored, retrieved, updated, and deleted from a database. This helped me understand how frontend applications communicate with cloud services and how to structure data for CRUD operations.'
+                        list: 'Frontend Data Abstraction and Client-Side Migration',
+                        challenges: 'With multiple views requiring similar data operations (notes, checklists, images), the main challenge was avoiding repetitive API fetching logic inside individual React components. Also, introducing new features meant local data shapes would change, risking client-side runtime errors for users returning with older cached data.',
+                        solutions: (
+                            <div>
+                                <p>
+                                    To handle this, I moved all the data-fetching and background logic out of the individual UI views and into <span className="font-semibold -text--blue">a single, centralized service file</span>. I created <span className="font-semibold -text--blue">reusable helper</span> functions that accept a simple "dataType" parameter, allowing the exact same code to cleanly feed notes, checklists, or images straight to the components. I also built <span className="font-semibold -text--blue"> a data migration utility </span> that checks for old, outdated local storage keys when the app opens and automatically formats them to match what the new UI expects, completely preventing page crashes without losing any of the user's saved history.
+                                </p>
+                            </div>
+                        )
                     },
                     {
                         list:'Learning Firestore Integration With AI Support',

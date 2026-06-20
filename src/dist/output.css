@@ -1297,6 +1297,10 @@ nav {
   border-radius: 0.75rem;
 }
 
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1361,6 +1365,16 @@ nav {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -1461,6 +1475,21 @@ nav {
   padding-bottom: 1.25rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1558,6 +1587,10 @@ nav {
   font-weight: 600;
 }
 
+.font-thin {
+  font-weight: 100;
+}
+
 .leading-none {
   line-height: 1;
 }
@@ -1575,6 +1608,10 @@ nav {
   color: rgb(56 56 56 / var(--tw-text-opacity));
 }
 
+.-text--lightgray {
+  color: rgba(var(--lightgray));
+}
+
 .-text--onDark {
   --tw-text-opacity: 1;
   color: rgb(233 233 233 / var(--tw-text-opacity));
@@ -1590,10 +1627,6 @@ nav {
 
 .text-transparent {
   color: transparent;
-}
-
-.-text--lightgray {
-  color: rgba(var(--lightgray));
 }
 
 .shadow-md {
