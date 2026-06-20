@@ -37,11 +37,14 @@ export default function Card({ type, title, description, path, column, skills, o
                         loading="lazy"
                         decoding="async"
                     />
-                    <div className="relative pt-8 px-5">
-                        <p className="-text--blue text-base inline-block font-semibold">{type}</p>
-                        <h4>{title}</h4>
-                        <p className="body--gray">{description}</p>
-                        <ul className="my-4">
+                    <div className="relative pt-8 px-5 flex flex-col flex-1 gap-4">
+                        <div className="flex-1">
+                            <p className="-text--blue text-base inline-block font-semibold">{type}</p>
+                            <h4>{title}</h4>
+                            <p className="body--gray">{description}</p>
+                        </div>
+                        
+                        <ul className="my-4 mt-auto">
                         {skills && skills.map((skill, index) => (
                             <li key={index} className='inline-block -text--chip--text font-Manrope text-base py-1 px-5 mb-2 mr-3 -bg--chip--background rounded-full'>{skill}</li>
                         ))}

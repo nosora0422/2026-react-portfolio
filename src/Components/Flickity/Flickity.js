@@ -33,11 +33,9 @@ export default function Carousel({ gallery }) {
   return (
     <div className='-bg--card-background pt-6 pb-10 rounded-2xl border border-solid -border--outline px-6 md:p-10 shadow-md'>
         <Flickity
-        elementType={'div'} 
-        options={flickityOptions} 
-        disableImagesLoaded={false} 
-        reloadOnUpdate 
-        static 
+        elementType={'div'}
+        options={flickityOptions}
+        disableImagesLoaded={false}
         >
             {galleryImage}
         </Flickity>

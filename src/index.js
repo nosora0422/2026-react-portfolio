@@ -23,19 +23,17 @@ const Project = lazy(() => import('./Views/Project/Project'));
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <React.StrictMode>
-    <HashRouter>
-      <Suspense fallback={null}>
-        <Routes>
-          <Route path="/" element={<App />}>
-            <Route index element={<Home />} />
-            <Route path="home" element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="projects" element={<Projects />} />
-            <Route path="project-details/:name" element={<Project />} />
-          </Route>
-        </Routes>
-      </Suspense>
-    </HashRouter>
-  </React.StrictMode>
+  <HashRouter>
+    <Suspense fallback={null}>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route index element={<Home />} />
+          <Route path="home" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="project-details/:name" element={<Project />} />
+        </Route>
+      </Routes>
+    </Suspense>
+  </HashRouter>
 );
