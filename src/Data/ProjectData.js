@@ -62,16 +62,16 @@ const projects = [
                 cardTitle:'Challenges & Solutions',
                 content:[
                     {
-                        list:'User authentication and Data Management',
-                        challenges:'There are three types of users in the app: Guest, Email Sign-up, and Google Login. Managing user authentication and data storage for these different user types was a key challenge, especially ensuring that data was securely stored and properly associated with the correct user accounts.',
-                        solutions:(
-                            'used local storage for guest users to temporarily store their notes, while implementing Firebase Authentication for email sign-up and Google login users. This allowed me to securely manage user data in Firestore, ensuring that each user\'s notes were properly stored and accessible across sessions. I also implemented logic to handle data synchronization between local storage and Firestore when a guest user signed up or logged in, providing a seamless transition while maintaining data integrity.'
-                        )
-                    },
-                    {
                         list:'Managing Persistent Data Storage',
                         challenges:'A key challenge was making sure notes were saved beyond the current browser session. At first, local component state was enough for testing the UI, but it was not suitable for storing real user data permanently.',
                         solutions:'I connected the app to Firebase Firestore so notes could be stored, retrieved, updated, and deleted from a database. This helped me understand how frontend applications communicate with cloud services and how to structure data for CRUD operations.'
+                    },
+                    {
+                        list:'User authentication and Data Management',
+                        challenges:'There are three types of users in the app: Guest, Email Sign-up, and Google Login. Managing user authentication and data storage for these different user types was a key challenge, especially ensuring that data was securely stored and properly associated with the correct user accounts.',
+                        solutions:(
+                            'I used local storage for guest users to temporarily store their notes, while implementing Firebase Authentication for email sign-up and Google login users. This allowed me to securely manage user data in Firestore, ensuring that each user\'s notes were properly stored and accessible across sessions. I also implemented logic to handle data synchronization between local storage and Firestore when a guest user signed up or logged in, providing a seamless transition while maintaining data integrity.'
+                        )
                     },
                     {
                         list:'Learning Firestore Integration With AI Support',
