@@ -25,7 +25,8 @@ export default function Header(){
                 pathname === '/project-details/React-Note-App'|| 
                 pathname === '/project-details/React-Native-Mobile-App'|| 
                 pathname === '/project-details/React-Portfolio-Website'||
-                pathname === '/project-details/React-Movie-Search-App'
+                pathname === '/project-details/React-Movie-Search-App' ||
+                pathname === '/project-details/MinCho'
                 ) {
             translateDistance = moveDistance * 2; 
         }
@@ -86,7 +87,8 @@ export default function Header(){
                                             cRoute.pathname ==='/project-details/React-Note-App'|| 
                                             cRoute.pathname ==='/project-details/React-Native-Mobile-App'|| 
                                             cRoute.pathname ==='/project-details/React-Portfolio-Website'||
-                                            cRoute.pathname ==='/project-details/React-Movie-Search-App'
+                                            cRoute.pathname ==='/project-details/React-Movie-Search-App'||
+                                            cRoute.pathname ==='/project-details/MinCho'
                                         ) 
                                         ? "point-dot" : "point-dot -bg--lightgray"}></span>
                                 </Link>
@@ -143,7 +145,8 @@ export default function Header(){
                                         cRoute.pathname ==='/project-details/React-Note-App'|| 
                                         cRoute.pathname ==='/project-details/React-Native-Mobile-App'|| 
                                         cRoute.pathname ==='/project-details/React-Portfolio-Website'||
-                                        cRoute.pathname ==='/project-details/React-Movie-Search-App'
+                                        cRoute.pathname ==='/project-details/React-Movie-Search-App'||
+                                        cRoute.pathname ==='/project-details/MinCho'
                                     ) 
                                     ? 'py-4 px-6 text-right font-Josefin rounded-full text-lg leading-none -text--onDark -bg--nav--darkgray my-3' :'font-Josefin text-right text-lg leading-none -text--onDark py-4 px-4 my-3'}
                                 onClick={handleToggle}    
@@ -155,7 +158,8 @@ export default function Header(){
                                     cRoute.pathname ==='/project-details/React-Note-App'|| 
                                     cRoute.pathname ==='/project-details/React-Native-Mobile-App'|| 
                                     cRoute.pathname ==='/project-details/React-Portfolio-Website'||
-                                    cRoute.pathname ==='/project-details/React-Movie-Search-App'
+                                    cRoute.pathname ==='/project-details/React-Movie-Search-App'||
+                                    cRoute.pathname ==='/project-details/MinCho'
                                 ) 
                                     ? "point-dot" : "point-dot -bg--lightgray"}></span>
                             </Link>

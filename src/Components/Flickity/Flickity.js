@@ -16,6 +16,7 @@ export default function Carousel({ gallery }) {
                     className='w-full box-border'
                 >
                     <p className='blue-lable mb-10'>{item.name}</p>
+                    {item.caption && <p className='text-xs mb-2'>{item.caption}</p>}
                     <div className='flex justify-center items-center rounded-xl box-border'>
                         <img 
                             src={item.slideImgPath}

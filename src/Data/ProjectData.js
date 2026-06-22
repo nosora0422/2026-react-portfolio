@@ -4,7 +4,7 @@ const projects = [
         name: 'React-Note-App',
         type:'Full-stack', 
         title:'Notely - React Note App',
-        skills: ['React.js','Tailwind','Firebase', 'Codex'], 
+        skills: ['React.js','Tailwind CSS','Firebase', 'Codex'], 
         description:'A responsive React note app for creating notes, image notes, and to-do lists, designed to support productive daily life with Firestore-powered data storage and Firebase Authentication for Google login and email sign-up.',
         img: '../Assets/Images/thumbnail-notely-react-app.webp',
         qr:'../Assets/Images/react-note-qr.webp',
@@ -223,7 +223,7 @@ const projects = [
         name: 'React-Portfolio-Website',
         type:'Front-end', 
         title:'React Portfolio Website',
-        skills: ['React.js','Tailwind','Figma', 'Spline'], 
+        skills: ['React.js','Tailwind CSS','Figma', 'Spline'], 
         description:'The goal of this portfolio was to create a single-page website using React.js that showcases myself as a front-end developer and introduces my projects.',
         img: '../Assets/Images/thumbnail-react-portfolio.webp',
         qr:'../Assets/Images/react-portfolio-qr.webp',
@@ -305,80 +305,115 @@ const projects = [
     },
     {
         id:3,
-        name: 'React-Movie-Search-App',
+        name: 'MinCho',
         type:'Front-end', 
-        title:'React Movie Search App',
-        skills: ['React.js','CSS','API', 'JSON'], 
-        description:'The project aimed to develop a TMDB movie application using the TMDB API, enabling users to access movie information efficiently.',
-        img: '../Assets/Images/thumbnail-react-movie-app.webp',
-        qr:'../Assets/Images/react-movie-qr.webp',
-        gitHubLink:'https://github.com/nosora0422/react-movie-app',
-        demolink:'https://nosora0422.github.io/react-movie-app/#/',
-        overview: 'Originally built with HTML, CSS, and JavaScript, the project transitioned to React.js for improved component management and API integration. Key functionalities include a search feature, saving favourites, and social media sharing, with a focus on optimizing API usage for a seamless user experience.',
+        title:'MinCho - Social Voting App',
+        skills: ['Next.js','Tailwind CSS','TypeScript', 'Vercel','Neon(PostgreSQL)'], 
+        description:'A responsive social voting app targeting Korean users where people debate controversial topics, vote, and discuss with context including the voter\'s field, age range, and MBTI type, creating a more engaging and informative community experience.',
+
+        img: '../Assets/Images/thumbnail-mincho.webp',
+        demolink:'https://mincho.codibara.com/',
+        gitHubLink:'https://github.com/codibara/Ask101',
+        overview: (
+            <div>
+                <p>Is mint chocolate dessert or toothpaste? Pineapple on pizza — yes or no? MinCho turns the debates people already argue about in group chats into <span className="font-semibold -text--blue">a structured social voting experience</span>, where every vote and <span className="font-semibold -text--blue">comment carries the voter's field, age range, and MBTI</span> — turning <span className="font-semibold -text--blue">an anonymous "yes/no"</span> into <span className="font-semibold -text--blue">"a 28-year-old INTJ designer thinks yes,"</span> which makes the debate far more interesting to read.</p><br/>
+                <p>I owned the <span className="font-semibold -text--blue">front-end build end-to-end</span>, working closely with the design team to translate UX/UI concepts into <span className="font-semibold -text--blue">a reusable component system</span> — buttons, cards, modals, pills, and dropdowns — with consistent variants and full interaction states (hover, active, disabled, loading). On top of that I built mobile-first navigation, a real-time voting UI, infinite scroll, comment/reply threads, and notification views, <span className="font-semibold -text--blue">all connected to API routes for posts, authentication, comments, and user interactions.</span></p><br/>
+                <p>I was also involved in deploying the app on Vercel, including safely managing environment variables and configuration for continuous integration. On the backend, the app is powered by a Neon (serverless PostgreSQL) database via Drizzle ORM built by a teammate, but something I worked alongside closely when wiring up front-end data needs.</p>
+            </div>
+        ),
         keyPoint:[
             { 
                 id:0,
-                cardTitle:'Function',
+                cardTitle:'Features',
                 content:[
                     {
-                        list:'Search',
-                        listDisc:'Users can search movies by the name of the movie.'
+                        list:'Voting System',
+                        listDisc:'Users can participate in voting on posts, view results, and engage in discussions. It closes when the voting reaches a certain threshold, encouraging timely participation and fostering dynamic interactions.'
                     },
                     {
-                        list:'Browse Movie List',
-                        listDisc:'The category loades various movie lists, which enables easy and quick access to movie information.'
+                        list:'Metadata-Driven Interactions',
+                        listDisc:'Each post and comment includes metadata such as their professional field, age range, and Myers-Briggs personality type, encouraging more informed and engaging interactions within the community.'
+                    },
+                    {
+                        list:'Permission-Gated Admin Interface',
+                        listDisc:'Users with Admin permissions can create, edit, and delete platform-wide announcements, with session and role-based access control that redirects unauthenticated or non-admin users automatically.'
                     },
                 ]
             },
             { 
                 id:1,
-                cardTitle:'Feature',
-                content:[
-                    {
-                        list:'Watch now',
-                        listDisc:'Each movie item provide with a link that redirects to TMDB pages for selected movie.'
-                    },
-                    {
-                        list:'Save to List',
-                        listDisc:'Users can save movies to the favourite list by clicking a heart icon.'
-                    },
-                    {
-                        list:'Share List',
-                        listDisc:'Userâ€™s favourite list can be shared on their social media such as Facebook, WhatsApp, and Twitter. '
-                    }
+                cardTitle: 'Technical Highlights',
+                content: [
+                {
+                    list: 'Interactive Voting UI with API-Driven State',
+                    listDisc:
+                    'Built a two-option voting interface where users can submit or update their vote through API routes, with the UI immediately reflecting updated vote counts, selected choices, and ended-vote states.'
+                },
+                {
+                    list: 'Infinite Scroll Post Feed',
+                    listDisc:
+                    'Implemented a dynamic post feed using cursor-based pagination and IntersectionObserver, allowing users to load more posts smoothly without manual pagination or full-page reloads.'
+                },
+                {
+                    list: 'Design System & Component Architecture',
+                    listDisc:
+                    'Built a reusable component set(Button, Card, Pill, Dropdown, Modal) with a consistent variant(primary/secondary/tertiary) and design tokens, used across the interface to keep the UI cohesive while moving fast.'
+                }
                 ]
             },
+        ],
+        challenges: [
             { 
-                id:2,
-                cardTitle:'Data',
-                content:[
-                    {
-                        list:'Local Storage',
-                        listDisc:'The app gets objects from local Storage and save new objects to local storage using setItem() and getItem() with JSON.parse() and JSON.stringify().'
-                    },
-                    {
-                        list:'API',
-                        listDisc:'TMDB API and functions, fetch() to make network requests and JSON.parse() to parse the body text to JSON.'
-                    },
-                ]
+              id: 0,
+              cardTitle: 'Challenges & Solutions',
+              content: [
+                {
+                  list: 'Keeping Vote Counts and User Choices in Sync',
+                  challenges:
+                    'The voting page needed to handle several states at once: whether the user had already voted, whether they were logged in, whether the post had ended, and whether they were trying to vote on their own post.',
+                  solutions: (
+                    <div>
+                      <p>
+                        I separated the logic into a user-specific vote check and a submit handler. On page load, <span className="font-semibold -text--blue">the front-end fetches the user’s existing vote</span> with the post ID and user ID, then stores it in local state. When the user votes or changes their vote, <span className="font-semibold -text--blue">the UI calls the vote API with POST or PUT, then updates votesA, votesB, and selectedOption</span> from the API response instead of guessing the result on the client.
+                      </p>
+                    </div>
+                  )
+                },
+                {
+                  list: 'Building a Smooth Infinite Scroll Feed',
+                  challenges:
+                    'The post list needed to feel continuous without loading the entire database at once or forcing users through page buttons.',
+                  solutions: (
+                    <div>
+                      <p>
+                        I used <span className="font-semibold -text--blue">IntersectionObserver with a sentinel ref</span> at the bottom of the feed to detect when the user reaches the next loading point. The front-end sends the current cursor to the posts API, receives the next group of posts, and appends them with <span className="font-semibold -text--blue">setRows(prev =&gt; [...prev, ...data.items])</span>. This kept the feed responsive while the backend handled cursor-based pagination using created date and post ID.
+                      </p>
+                    </div>
+                  )
+                },
+                {
+                  list: 'Managing Profile Validation and API Feedback',
+                  challenges:
+                    'The profile form had multiple dependent inputs, and the nickname field needed real-time duplicate checking without calling the API on every keystroke.',
+                  solutions: (
+                    <div>
+                      <p>
+                        I built a validation layer that checks required fields, birth year range, MBTI completion, and custom occupation before saving. For nickname checking, I used a <span className="font-semibold -text--blue">debounced API request</span> with a timeout ref, so the duplicate check only runs after the user pauses typing. I also stored <span className="font-semibold -text--blue">field-level errors in state</span>, allowing the UI to show targeted feedback before sending the final PUT request to update the profile.
+                      </p>
+                    </div>
+                  )
+                }
+              ]
             },
-            { 
-                id:3,
-                cardTitle:'Key Elements',
-                content:[
-                    {
-                        list:'createContext()',
-                        listDisc:'createContext() and Provider facilitated the sharing of global search terms among components.'
-                    },
-                    {
-                        list:'useEffect()',
-                        listDisc:'useEffect() ensured requests were made selectively, triggered by changes in dependencies like page size.'
-                    },
-                    {
-                        list:'map() & object arrays',
-                        listDisc:'Utilizing map() with object arrays allowed for the dynamic generation of components, optimizing for efficient updates and revisions.'
-                    },
-                ]
+          ],
+        slideImg:[
+            {
+                name: 'App Screenshots',
+                slideImgPath:'../../Assets/Images/Mincho-App-Screen.webp',
+            },
+            {
+                name: 'Responsive Screens',
+                slideImgPath:'../../Assets/Images/Mincho-Responsive.webp',
             },
         ]
     },
