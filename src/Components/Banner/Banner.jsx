@@ -50,7 +50,7 @@ export default function Banner(props){
                                         </motion.h2>))
                                 ) : (
                                     <h2>
-                                        <span>{props.h2second}<span className={`point-dot ${props.h1 === 'ABOUT' ? '-bg--yellow' : ''}`}></span></span>
+                                        {props.h2second}<span className={`point-dot ${props.h1 === 'ABOUT' ? '-bg--yellow' : ''}`}></span>
                                     </h2>
                                 )}
                         </div>

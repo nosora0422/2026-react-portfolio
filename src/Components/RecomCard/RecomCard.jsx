@@ -83,7 +83,7 @@ export default function RecomCard() {
                             rel="noopener noreferrer" ><FaLinkedinIn className="-text--primary cursor-pointer hover:-text--lightgray" aria-hidden="true"/></a>
                         </div>
                     </div>
-                    <img className="object-over object-center rounded-full border border-solid -border--lightgray w-10 h-10" src={item.img} alt={item.name} loading="lazy"
+                    <img className="object-cover object-center rounded-full border border-solid -border--lightgray w-10 h-10" src={item.img} alt={item.name} loading="lazy"
                     decoding="async" />
                 </div>
             </motion.div>

@@ -81,6 +81,9 @@
 }
 
 @layer components {
+    h2{
+        text-indent: -0.05em;
+    }
     .my-h1{
         @apply text-3xl -text--primary font-bold font-Josefin mb-4;
     }

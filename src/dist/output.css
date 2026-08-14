@@ -697,6 +697,10 @@ nav {
   --tw-backdrop-sepia:  ;
 }
 
+h2{
+  text-indent: -0.05em;
+}
+
 .body--gray {
   font-family: Manrope, sans-serif;
   font-weight: 400;
@@ -1009,6 +1013,10 @@ nav {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .grid {
   display: grid;
 }
@@ -1227,10 +1235,6 @@ nav {
 
 .items-baseline {
   align-items: baseline;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .justify-center {

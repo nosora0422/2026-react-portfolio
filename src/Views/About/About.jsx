@@ -59,22 +59,38 @@ export default function About(){
                                     </div>    
                                 </div>
                             </div>
+
                             <div className="w-full pt-20">
                                 <h3>SKILLS<span className="point-dot -bg--yellow"></span></h3>
                                 <div>
                                     <div className="mb-14">
-                                        <h5>Programming Language & Library</h5>
-                                        <p className="body--gray">HTML, CSS, JavaScript, PHP, React.js, React Native, Next.js Tailwind, Bootstrap</p>
+                                        <h5>Languages</h5>
+                                        <p className="body--gray">JavaScript (ES6+), TypeScript, HTML5, CSS3, SASS, C#</p>
                                     </div>
-        
+
                                     <div className="mb-14">
-                                        <h5>Design Software</h5>
-                                        <p className="body--gray">Adobe Photoshop, Illustrator, Indesign, After Effect, Premier Pro, Figma</p>
+                                        <h5>Frameworks &amp; Libraries</h5>
+                                        <p className="body--gray">React.js, Next.js, React Native, Expo, Tailwind CSS, Bootstrap, ASP.NET MVC</p>
                                     </div>
-        
+
                                     <div className="mb-14">
-                                        <h5>Database & System</h5>
-                                        <p className="body--gray">MySQL, Webflow, Wordpress, Shopify, Firebase</p>
+                                        <h5>Front-End Practices</h5>
+                                        <p className="body--gray">Responsive &amp; mobile-first design, reusable component architecture, design systems, web accessibility (WCAG), REST API integration</p>
+                                    </div>
+
+                                    <div className="mb-14">
+                                        <h5>Design &amp; Collaboration</h5>
+                                        <p className="body--gray">Figma (design systems, design tokens, wireframes), Adobe Photoshop, Illustrator, InDesign, After Effects, Premiere Pro, Agile/Scrum</p>
+                                    </div>
+
+                                    <div className="mb-14">
+                                        <h5>Tools &amp; Platforms</h5>
+                                        <p className="body--gray">Git, GitHub, VS Code, Visual Studio, Postman, Vercel, Firebase</p>
+                                    </div>
+
+                                    <div className="mb-14">
+                                        <h5>CMS &amp; E-Commerce</h5>
+                                        <p className="body--gray">WordPress, Shopify (theme customization, Liquid)</p>
                                     </div>
                                 </div>
                             </div>
